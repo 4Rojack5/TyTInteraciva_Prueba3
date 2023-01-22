@@ -1,0 +1,29 @@
+<div class="card mt-5">
+    <img src="../../../assets/pictures/news.jpg" class="card-img-top" id="imgNews">
+    <div class="card-body">
+    <h5 class="card-title justify-content-center text-center">¡Encuentra tu Noticia Favorita alrededor del mundo!</h5>
+    <p class="card-text justify-content-center text-center">Solamente necesitas seleccionar la categoria que quieres ver, junto con el pais donde quieres estar.</p>
+    </div>
+    <form action="" (ngSubmit)="newsSearch()">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+        <label for="">Categoria</label>
+        <select class="form-select" name="categoria" [(ngModel)]="CategorySelection"  id="">
+            <option *ngFor="let categoria of categories" [value]="categoria.value">
+                {{ categoria.nombre }}
+            </option>
+        </select>
+    </li>
+    <li class="list-group-item">
+        <label for="">País</label>
+        <select class="form-select form-select" name="pais" [(ngModel)]="CountrySelection" id="">
+            <option *ngFor="let pais of countries" [value]="pais.value">
+                {{ pais.nombre }}
+            </option>
+        </select>
+    </li>
+    </ul>
+    <div class="card-body">
+    <button type="submit" class="btn btn-success justify-content-center">¡Buscar!</button>
+    </div>
+    </form></div>
