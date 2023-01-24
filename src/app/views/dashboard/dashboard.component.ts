@@ -9,9 +9,11 @@ export class DashboardComponent implements OnInit {
 
   @Output() selectParams = new EventEmitter<any>();
 
+  //Para poner un pais y una categoria predeterminada
   CategorySelection = 'general';
   CountrySelection = 'co';
 
+  //Array de categorias
   categories: any [] = [
     {value: 'general', nombre: 'General'},
     {value: 'bussiness', nombre: 'Negocios'},
@@ -22,6 +24,7 @@ export class DashboardComponent implements OnInit {
     {value: 'technology', nombre: 'Tecnologia'},
   ]
 
+  //Array de paises
   countries: any [] = [
     {value: 'br', nombre: 'Brasil'},
     {value: 'ar', nombre: 'Argentina'},
@@ -36,6 +39,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //funcion para hacer la busqueda mediante los parametros seleccionados
   newsSearch(){
     const params = {
       category: this.CategorySelection,

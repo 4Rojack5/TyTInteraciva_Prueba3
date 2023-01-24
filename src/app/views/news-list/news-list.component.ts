@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NewsListComponent implements OnInit {
 
+  //Se añade un input para traer una array
   @Input() newsLists: any;
 
   constructor() { }

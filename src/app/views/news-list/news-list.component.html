@@ -1,13 +1,18 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">
+    <!--*ngFor para traer las noticias y las enseñe en la clase card-->
     <div class="col" *ngFor="let news of newsLists">
     <div class="card">
+        <!--Pone la imagen de la noticia-->
         <img [src]="news.urlToImage" class="card-img-top" alt="...">
         <div class="card-body">
+        <!--Pone el titulo de la noticia por interpolación-->
         <h5 class="card-title">{{ news.title }}</h5>
+        <!--Pone el contenido de la noticia por interpolación-->
         <p class="card-text">{{ news.content }}</p>
         </div>
     </div>
     <div class="container d-flex justify-content-center">
+    <!--Pone el url de la noticia por interpolación-->
     <a [href]="news.url" class="btn btn-success btn-block mt-3 mb-3" target="_blank">¡Ir a la Noticia!</a>
     </div>
     </div>

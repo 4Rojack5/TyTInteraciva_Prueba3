@@ -11,6 +11,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
+//IMPORTACION DE LOS COMPONENTES Y MODULOS
 @NgModule({
   declarations: [
     AppComponent,

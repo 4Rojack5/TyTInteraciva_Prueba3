@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 
+//SE ENRUTAN TODAS LAS VIEWS|COMPONENTS
 const routes: Routes = [
   {
     path: '', 

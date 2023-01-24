@@ -2,9 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
+Esta es la prueba 3 para la empresa T&T interactiva, la prueba consiste en mostrar noticias de diferentes paises y diferentes categorias consumiendo una api llamada news News API – Search News and Blog Articles on the Webhttps://newsapi.org, la app contiene decoraciones de bootstrap y como en la anterior prueba dos vistas pero esta si no redirecciona ya que se muestran en el app.component.
+
+Para utilizar solo es necesario ejecutarla y selecciona la categoria preferida y el pais. Al hacer scroll se podrán ver las ultimas noticias seleccionadas ademas de un boton que redirecciona al link original de la noticia.
+
+Muchas gracias por la Atención prestada.
+
+Created By: Juan Felipe Rodríguez Rendón
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve --o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

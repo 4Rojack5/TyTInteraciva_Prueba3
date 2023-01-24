@@ -1,3 +1,4 @@
+<!--Se crea un container que contiene un card para poder buscar la noticia-->
 <div class="container d-flex justify-content-center">
 <div class="card mt-5 mb-5" style="width: 40rem; border: none;">
     <img src="../../../assets/pictures/news.jpg" class="card-img-top" id="imgNews">
@@ -5,11 +6,14 @@
     <h5 class="card-title justify-content-center text-center">¡Encuentra tu Noticia Favorita alrededor del mundo!</h5>
     <p class="card-text justify-content-center text-center">Solamente necesitas seleccionar la categoria que quieres ver, junto con el pais donde quieres estar.</p>
     </div>
+    <!--ngSubmit para mandar a una funcion a buscar-->
     <form action="" (ngSubmit)="newsSearch()">
     <ul class="list-group list-group-flush">
     <li class="list-group-item">
         <label for="">Categoria:</label>
+        <!--ngModel para poner una categoria predeterminada desde el .ts-->
         <select class="form-select" name="categoria" [(ngModel)]="CategorySelection"  id="">
+            <!--*ngFor para traer las categorias escritas en el .ts por interpolación y traer el value-->
             <option *ngFor="let categoria of categories" [value]="categoria.value">
                 {{ categoria.nombre }}
             </option>
@@ -17,7 +21,9 @@
     </li>
     <li class="list-group-item">
         <label for="">País:</label>
+        <!--ngModel para poner un pais predeterminado desde el .ts-->
         <select class="form-select form-select" name="pais" [(ngModel)]="CountrySelection" id="">
+            <!--*ngFor para traer los paises escritos en el .ts por interpolación y traer el value-->
             <option *ngFor="let pais of countries" [value]="pais.value">
                 {{ pais.nombre }}
             </option>
@@ -25,6 +31,7 @@
     </li>
     </ul>
     <div class="card-body d-flex justify-content-center">
+    <!--Se añade un boton con submit y buscar las noticias-->
     <button type="submit" class="btn btn-success justify-content-center">¡Buscar!</button>
     </div>
     </form>
